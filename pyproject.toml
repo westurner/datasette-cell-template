@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datasette-cell-template"
+version = "0.1.0"
+description = "A custom Datasette plugin for hnlog"
+readme = "README.md"
+authors = [{name = "Wes Turner", email = "wes@wrd.nu"}]
+license = "Apache-2.0"
+classifiers = [
+    "Framework :: Datasette",
+]
+dependencies = [
+    "datasette",
+    "markupsafe"
+]
+
+[tool.setuptools]
+packages = ["datasette_cell_template"]
+
+[project.entry-points.datasette]
+cell_template = "datasette_cell_template"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio", "pytest-cov"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=datasette_cell_template --cov-report=term-missing"
+# pythonpath = [
+#   "."
+# ]
