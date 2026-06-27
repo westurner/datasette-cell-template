@@ -1,6 +1,7 @@
 # datasette-cell-template
 
-A custom Datasette plugin that renders clickable links in table cells using configurable templates. Designed for `hnlog` to link IDs to external URLs.
+A Datasette plugin that renders clickable links in table cells using configurable templates.
+Supports linking ID columns to external URLs.
 
 ## Table of Contents
 
