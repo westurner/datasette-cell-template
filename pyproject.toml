@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "datasette-cell-template"
-version = "0.1.0"
+version = "0.1.1"
 description = "A custom Datasette plugin for hnlog"
 readme = "README.md"
 authors = [{name = "Wes Turner", email = "wes@wrd.nu"}]
